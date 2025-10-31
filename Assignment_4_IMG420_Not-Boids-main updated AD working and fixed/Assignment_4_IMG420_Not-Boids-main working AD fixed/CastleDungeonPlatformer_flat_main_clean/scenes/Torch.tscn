@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[node name="Torch" type="Node2D"]
+
+[node name="Flame" type="GPUParticles2D" parent="."]
+one_shot = false
+emitting = true
+amount = 30
+gravity = Vector2(0, -100)
+
+[node name="Light2D" type="PointLight2D" parent="."]
+energy = 0.9
+texture_scale = 1.2

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(4000, 48)
+
+[node name="Ground" type="StaticBody2D"]
+position = Vector2(0, 96) # y ~ floor height
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 24)
+shape = SubResource("1")

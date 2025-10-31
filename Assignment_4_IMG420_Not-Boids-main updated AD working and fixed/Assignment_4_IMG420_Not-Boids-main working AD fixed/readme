@@ -1,0 +1,71 @@
+🕹️ Boids Chase Game
+
+Author: Munendra
+Course: IMG Assignment 4 — Boids and Flocking Simulation
+Engine: Godot 4.4 (C#/.NET)
+Date: October 2025
+
+🎯 Overview
+
+Boids Chase is a 2D simulation-based game inspired by Craig Reynolds’ Boids model (1986).
+The player controls a small character using WASD or Arrow Keys, attempting to survive waves of flocking enemies that hunt the player.
+
+Each enemy flock uses standard flocking rules:
+
+Separation – avoid crowding neighbors.
+
+Alignment – move in the same direction as nearby boids.
+
+Cohesion – move toward the average position of neighbors.
+
+The game ends when:
+
+The player survives all waves → Win Scene, or
+
+A boid collides with the player → Game Over Scene.
+
+🧩 Features
+
+Start, Win, and Game Over screens.
+
+Multiple enemy waves with difficulty scaling.
+
+Fully coded flocking behavior in C#.
+
+Minimalistic HUD and camera.
+
+Keyboard-based movement system.
+
+🕹️ Controls
+Action	Key
+Move	WASD / Arrow Keys
+Start Game	Enter / Space
+Exit	Esc (from Godot editor)
+🧠 Technical Notes
+
+Main Scene: scenes/Main.tscn
+
+Scripts Folder: src/
+
+Player Script: Player.cs
+
+Flocking Logic: BoidFlock.cs, Boid.cs
+
+Spawner: EnemySpawner.cs
+
+Built using Godot 4.4 (.NET) with C# language support.
+
+🧾 Citations & References
+
+Portions of this project were developed with assistance from OpenAI’s GPT-5 (ChatGPT) to structure scripts, debug Godot scene issues, and integrate game logic.
+All core design decisions, testing, and final implementation were completed by the student (Munendra).
+
+Additional References
+
+Reynolds, Craig W. Flocks, Herds, and Schools: A Distributed Behavioral Model. SIGGRAPH ’87.
+
+Godot Engine Documentation — https://docs.godotengine.org
+
+OpenAI, “ChatGPT (GPT-5),” 2025.
+
+GDQuest Tutorials — https://www.gdquest.com
